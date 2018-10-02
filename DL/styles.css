@@ -78,6 +78,10 @@ img{
     font-size: 18px;
 margin: 30px 0 0;
 }
+.info-image img {
+    height: 100%;
+    width: auto;
+}
 .info-socials{
     margin: 20px 0 40px;
     display: flex;
