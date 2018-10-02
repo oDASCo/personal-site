@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.css" />
+</head>
+<body>
+<div class="main" id="mainContainer">
+    <div class="wrapper">
+        <div class="left-container">
+            <div class="info-nav">
+                <div class="main-title">
+                    <p id="textWithTyped">I'm <span class="main-title-span" id="typedText"></span>|</p>
+                </div>
+                <div class="main-info">
+                    <div class="main-info-item">
+                        <span class="main-info-span">Age : </span> 19
+                    </div>
+                    <div class="main-info-item">
+                        <span class="main-info-span">Date og birth : </span> 18.12.1998
+                    </div>
+                    <div class="main-info-item">
+                        <span class="main-info-span">Address : </span> Belarus, Minsk
+                    </div>
+                    <div class="main-info-item">
+                        <span class="main-info-span">E-mail : </span> dasc@ya.ru
+                    </div>
+                    <div class="main-info-item">
+                        <span class="main-info-span">Phone : </span> +375447167768
+                    </div>
+                    <div class="main-info-item">
+                        <span class="main-info-span">Freelance : </span> Available
+                    </div>
+                    <div class="main-btn">
+                        Contact me
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="info-nav">
+                <div class="info-image">
+                    <img src="img/myphoto.jpg">
+                </div>
+                <div class="info-name">
+                    <p>Lazovskaya Daria</p>
+                </div>
+                <div class="info-socials">
+                    <a><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-skype" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                </div>
+                <div class="nav">
+                    <div class="nav-item active" id="home">Home</div>
+                    <div class="nav-item" id="aboutMe">About me</div>
+                    <div class="nav-item" id="portfolio">Portfolio</div>
+                    <div class="nav-item" id="skills">Skills</div>
+                    <div class="nav-item" id="photos">Photos</div>
+                    <div class="nav-item" id="contact">Contact me</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="very-right-container">
+            <div class="about-me-container" id="aboutMeContainer">
+                <div class="about-me-img">
+                    <img src="img/home.jpg">
+                </div>
+                <div class="about-me-text">
+                    <p class="main-card-title">About me</p>
+                    <p>I'm 24 years old creative web designer based in New York, specializing in User Interface Design
+                        and Development.
+                        I build clean, appealing, and functional interfaces which comply with the latest web standards.
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+                <div class="about-me-facts">
+                    <p class="main-card-title">Some facts</p>
+                    <div class="about-me-facts-row">
+                        <div class="about-me-fact">
+                            <img src="img/web.png">
+                            <p class="fact-text">More than 1 year experience in frontend</p>
+                        </div>
+                        <div class="about-me-fact">
+                            <img src="img/dancer.png">
+                            <p class="fact-text">14 years of dance classes</p>
+                        </div>
+                        <div class="about-me-fact">
+                            <img src="img/around.png">
+                            <p class="fact-text">12 countries visited</p>
+                        </div>
+                        <div class="about-me-fact">
+                            <img src="img/portfolio.png">
+                            <p class="fact-text">started working at 15 years old</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-container" id="portfolioContainer">
+                <p class="main-card-title">Portfolio</p>
+                <div class="portfolio-row">
+                    <a data-fancybox="gallery" href="img/home.jpg" class="portfolio-card">
+                        <img src="img/home.jpg">
+                        <div class="portfolio-card-info">
+                            <p class="portfolio-title">Project 1</p>
+                        </div>
+                    </a>
+                    <a data-fancybox="gallery" href="img/home.jpg" class="portfolio-card">
+                        <img src="img/home.jpg">
+                        <div class="portfolio-card-info">
+                            <p class="portfolio-title">Project 1</p>
+                        </div>
+                    </a>
+                    <a data-fancybox="gallery" href="img/home.jpg" class="portfolio-card">
+                        <img src="img/home.jpg">
+                        <div class="portfolio-card-info">
+                            <p class="portfolio-title">Project 1</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="skills-container" id="skillsContainer">
+                <p class="main-card-title">Skills</p>
+                <div class="skills-block-row">
+                   <p class="skills-block-row-title">Frontend</p>
+                    <div class="skill-block first-skill-block">
+                        <p class="skill-title">HTML</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">CSS</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">JavaScript</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">LESS/SASS</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">JQuery</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">React</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">Web-design</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-block-row">
+                    <p class="skills-block-row-title">Programming</p>
+                    <div class="skill-block first-skill-block">
+                        <p class="skill-title">C/C++</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">Ruby</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">PHP</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-block-row">
+                    <p class="skills-block-row-title">Languages</p>
+                    <div class="skill-block first-skill-block">
+                        <p class="skill-title">Russian</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">Belarusian</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">English</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">German</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-block-row">
+                    <p class="skills-block-row-title">Sport</p>
+                    <div class="skill-block first-skill-block">
+                        <p class="skill-title">Сheerleading</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">Running</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">Stretching</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-block-row">
+                    <p class="skills-block-row-title">Dancing</p>
+                    <div class="skill-block first-skill-block">
+                        <p class="skill-title">Folk</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                    <div class="skill-block">
+                        <p class="skill-title">Modern dances</p>
+                        <div class="skill-level">
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle-active"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                            <div class="level-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photos-container" id="photosContainer">
+                <p class="main-card-title">Photos</p>
+                <div class="portfolio-row">
+                    <a data-fancybox="gallery" href="img/home.jpg" class="portfolio-card">
+                        <img src="img/home.jpg">
+                        <div class="portfolio-card-info">
+                        </div>
+                    </a>
+                    <a data-fancybox="gallery" href="img/home.jpg" class="portfolio-card">
+                        <img src="img/home.jpg">
+                        <div class="portfolio-card-info">
+                        </div>
+                    </a>
+                    <a data-fancybox="gallery" href="img/home.jpg" class="portfolio-card">
+                        <img src="img/home.jpg">
+                        <div class="portfolio-card-info">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts-container" id="contactsContainer">
+                <p class="main-card-title">Contacts</p>
+                <div class="contacts-row">
+                    <div class="contact-block">
+                        <div class="contact-block-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="contact-block-text">
+                            <div class="contact-block-title">Phone Number</div>
+                            <div class="contact-block-content"><a href="tel:+375447167768" target="_blank">+375 44 716 77 68</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-block-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <div class="contact-block-text">
+                            <div class="contact-block-title">E-mail</div>
+                            <div class="contact-block-content"><a href="mailto:dasc@ya.ru" target="_blank">dasc@ya.ru</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-block-icon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                        <div class="contact-block-text">
+                            <div class="contact-block-title">Instagram</div>
+                            <div class="contact-block-content"><a href="https://www.instagram.com/dasc__yp/" target="_blank">dasc__yp</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-block-icon"><i class="fa fa-vk" aria-hidden="true"></i></div>
+                        <div class="contact-block-text">
+                            <div class="contact-block-title">Vkontakte</div>
+                            <div class="contact-block-content"><a href="https://vk.com/dascmd" target="_blank">Daria Lazovskaya</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-block-icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        <div class="contact-block-text">
+                            <div class="contact-block-title">Facebook</div>
+                            <div class="contact-block-content"><a href="https://web.facebook.com/daria.lazovskaya?_rdc=10&_rdr" target="_blank">Daria Lazovskaya</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                    <div class="contact-block-icon"><i class="fa fa-github" aria-hidden="true"></i></div>
+                    <div class="contact-block-text">
+                        <div class="contact-block-title">GitHub</div>
+                        <div class="contact-block-content"><a href="https://github.com/oDASCo" target="_blank">oDASCo</a></div>
+                    </div>
+                </div>
+                    <div class="contact-block">
+                        <div class="contact-block-icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                        <div class="contact-block-text">
+                            <div class="contact-block-title">CV</div>
+                            <div class="contact-block-content"><a href="https://jobs.tut.by/resume/5734a501ff03e1bfa40039ed1f56735752476b" target="_blank">Лазовская Дарья</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
