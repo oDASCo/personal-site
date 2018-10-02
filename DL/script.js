@@ -66,6 +66,7 @@ let linkPortfolio = document.getElementById('portfolio');
 let linkSkills = document.getElementById('skills');
 let linkPhotos = document.getElementById('photos');
 let linkContacts = document.getElementById('contact');
+let contactBtn = document.getElementById('contactBtn');
 
 linkAbout.onclick = function () {
     state = '1';
@@ -82,6 +83,7 @@ linkAbout.onclick = function () {
         linkPhotos.classList.remove('active');
         linkSkills.classList.remove('active');
         linkContacts.classList.remove('active');
+        elem.parentElement.style.height = "100%";
     }
 };
 
@@ -100,6 +102,7 @@ linkHome.onclick = function () {
         linkPhotos.classList.remove('active');
         linkSkills.classList.remove('active');
         linkContacts.classList.remove('active');
+        elem2.parentElement.style.height = "100vh";
     }
 };
 
@@ -118,6 +121,7 @@ linkPortfolio.onclick = function () {
         linkPhotos.classList.remove('active');
         linkSkills.classList.remove('active');
         linkContacts.classList.remove('active');
+        elem2.parentElement.style.height = "100%";
     }
 };
 
@@ -136,6 +140,7 @@ linkSkills.onclick = function () {
         linkPortfolio.classList.remove('active');
         linkPhotos.classList.remove('active');
         linkContacts.classList.remove('active');
+        elem3.parentElement.style.height = "100%";
     }
 };
 
@@ -155,6 +160,7 @@ linkPhotos.onclick = function () {
         linkPortfolio.classList.remove('active');
         linkSkills.classList.remove('active');
         linkContacts.classList.remove('active');
+        elem4.parentElement.style.height = "100%";
     }
 };
 
@@ -174,5 +180,26 @@ linkContacts.onclick = function () {
         linkPortfolio.classList.remove('active');
         linkPhotos.classList.remove('active');
         linkSkills.classList.remove('active');
+        elem5.parentElement.style.height = "100%";
+    }
+};
+
+
+contactBtn.onclick = function () {
+    state = '5';
+    if (state == '5') {
+        let elem5 = document.getElementById('mainContainer');
+        elem5.classList.add("main5");
+        elem5.classList.remove("main1");
+        elem5.classList.remove("main2");
+        elem5.classList.remove("main3");
+        elem5.classList.remove("main4");
+        linkContacts.classList.add('active');
+        linkAbout.classList.remove('active');
+        linkHome.classList.remove('active');
+        linkPortfolio.classList.remove('active');
+        linkPhotos.classList.remove('active');
+        linkSkills.classList.remove('active');
+        elem5.parentElement.style.height = "100%";
     }
 };
