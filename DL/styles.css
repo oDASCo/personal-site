@@ -507,3 +507,106 @@ p.skills-block-row-title {
         transform: rotateY(360deg);
     }
 }
+
+@media only screen and (max-width: 991px) {
+    body {
+        height: auto;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .left-container{
+        width: 100%;
+        padding: 80px 0;
+        margin: 0 0 50px;
+    }
+    .main0 .right-container{
+        width: 100%;
+
+        margin-top: 240px;
+    }
+    .main0 .left-container{
+        width: 100%;
+        padding: 80px 0;
+        margin: 0 0 50px;
+        min-height: 480px;
+    }
+    .right-container{
+        width: 100%;
+    }
+    .main1 .right-container{
+        width: 100%;
+    }
+    .main1 .very-right-container{
+        width: 100%;
+    }
+    .main1 .about-me-container{
+        width: 100%;
+        margin: 0;
+    }
+    .main2 .right-container{
+        width: 100%;
+    }
+    .main2 .very-right-container{
+        width: 100%;
+    }
+    .main2 .portfolio-container{
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main3 .right-container{
+        width: 100%;
+    }
+    .main3 .very-right-container{
+        width: 100%;
+    }
+    .main3 .skills-container{
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main4 .right-container{
+        width: 100%;
+    }
+    .main4 .very-right-container{
+        width: 100%;
+    }
+    .main4 .photos-container{
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main5 .right-container{
+        width: 100%;
+    }
+    .main5 .very-right-container{
+        width: 100%;
+    }
+    .main5 .contacts-container{
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .main-title {
+        font-size: 26px;
+    }
+    .about-me-facts-row {
+        flex-direction: column;
+    }
+    .about-me-fact {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .portfolio-row a {
+        width: 100%;
+    }
+    .skill-block {
+        width: 100%;
+    }
+    .contact-block {
+        width: 100%;
+    }
+}
