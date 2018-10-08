@@ -91,6 +91,7 @@ linkHome.onclick = function () {
     state = '0';
     if (state == '0') {
         let elem2 = document.getElementById('mainContainer');
+        elem2.classList.add("main0");
         elem2.classList.remove("main1");
         elem2.classList.remove("main2")
         elem2.classList.remove("main3");
@@ -115,6 +116,7 @@ linkPortfolio.onclick = function () {
         elem2.classList.remove("main3");
         elem2.classList.remove("main4");
         elem2.classList.remove("main5");
+        elem2.classList.remove("main0");
         linkPortfolio.classList.add('active');
         linkAbout.classList.remove('active');
         linkHome.classList.remove('active');
@@ -134,6 +136,7 @@ linkSkills.onclick = function () {
         elem3.classList.remove("main2");
         elem3.classList.remove("main4");
         elem3.classList.remove("main5");
+        elem3.classList.remove("main0");
         linkSkills.classList.add('active');
         linkAbout.classList.remove('active');
         linkHome.classList.remove('active');
@@ -154,6 +157,7 @@ linkPhotos.onclick = function () {
         elem4.classList.remove("main2");
         elem4.classList.remove("main3");
         elem4.classList.remove("main5");
+        elem4.classList.remove("main0");
         linkPhotos.classList.add('active');
         linkAbout.classList.remove('active');
         linkHome.classList.remove('active');
@@ -174,6 +178,7 @@ linkContacts.onclick = function () {
         elem5.classList.remove("main2");
         elem5.classList.remove("main3");
         elem5.classList.remove("main4");
+        elem5.classList.remove("main0");
         linkContacts.classList.add('active');
         linkAbout.classList.remove('active');
         linkHome.classList.remove('active');
@@ -194,6 +199,7 @@ contactBtn.onclick = function () {
         elem5.classList.remove("main2");
         elem5.classList.remove("main3");
         elem5.classList.remove("main4");
+        elem5.classList.remove("main0");
         linkContacts.classList.add('active');
         linkAbout.classList.remove('active');
         linkHome.classList.remove('active');

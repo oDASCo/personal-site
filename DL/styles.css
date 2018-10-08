@@ -27,6 +27,21 @@ img{
     justify-content: center;
     align-items: center;
 }
+.main0 .left-container{
+    width: 50%;
+    height: 100%;
+    background-image: url("img/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    animation: left-move 1s;
+}
+.main0 .right-container{
+    animation: right-move 1s;
+}
 .right-container{
     width: 50%;
     background-color: white;
@@ -157,6 +172,7 @@ margin: 30px 0 0;
     width: 30%;
     z-index: 10;
     box-shadow: 0 0 10px #a2a2a2;
+    animation: left-move 1s;
 }
 .about-me-container{
     width: 60%;
@@ -164,9 +180,14 @@ margin: 30px 0 0;
     box-shadow: 0 0 19px #a2a2a2;
     background-color: white;
     display: none;
+    animation: move 1s;
 }
 .about-me-text{
     margin: 20px 40px;
+}
+.about-me-text p{
+    margin-bottom: 20px;
+    line-height: 24px;
 }
 .main-card-title{
     font-size: 16px;
@@ -197,12 +218,18 @@ margin: 30px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 23%;
+    max-width: 22%;
 }
 .about-me-fact img{
     width: 80px;
     height: 80px;
     margin-bottom: 30px;
+}
+.about-me-fact img:hover{
+    animation: rotate-img 500ms ease-in infinite;
+}
+.fact-text{
+    text-align: center;
 }
 .main1 .about-me-container{
     display: block;
@@ -219,6 +246,7 @@ margin: 30px 0 0;
     width: 30%;
     z-index: 10;
     box-shadow: 0 0 10px #a2a2a2;
+    animation: left-move 1s;
 }
 .main3 .very-right-container{
     display: block;
@@ -231,6 +259,7 @@ margin: 30px 0 0;
     width: 30%;
     z-index: 10;
     box-shadow: 0 0 10px #a2a2a2;
+    animation: left-move 1s;
 }
 .main3 .skills-container{
     display: block;
@@ -243,6 +272,7 @@ margin: 30px 0 0;
     background-color: white;
     display: none;
     padding: 40px 30px;
+    animation: move 1s;
 }
 
 .main4 .very-right-container{
@@ -258,6 +288,7 @@ margin: 30px 0 0;
     z-index: 10;
     box-shadow: 0 0 10px #a2a2a2;
     height: 100vh;
+    animation: left-move 1s;
 }
 .main4 .photos-container{
     display: block;
@@ -270,6 +301,7 @@ margin: 30px 0 0;
     background-color: white;
     display: none;
     padding: 40px 30px;
+    animation: move 1s;
 }
 .main5 .very-right-container{
     display: block;
@@ -284,6 +316,7 @@ margin: 30px 0 0;
     z-index: 10;
     height: 100vh;
     box-shadow: 0 0 10px #a2a2a2;
+    animation: left-move 1s;
 }
 .main5 .contacts-container{
     display: block;
@@ -296,6 +329,7 @@ margin: 30px 0 0;
     background-color: white;
     display: none;
     padding: 40px 30px;
+    animation: move 1s;
 }
 
 .portfolio-container{
@@ -305,6 +339,7 @@ margin: 30px 0 0;
     background-color: white;
     display: none;
     padding: 40px 30px;
+    animation: move 1s;
 }
 .main2 .portfolio-container{
     display: block;
@@ -343,11 +378,18 @@ margin: 30px 0 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+    text-align: center;
+}
+.portfolio-info{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #d6d6d6;
 }
 .portfolio-card:hover > img{
     -webkit-transform: scale(1.1);
@@ -414,9 +456,54 @@ p.skills-block-row-title {
 }
 .contact-block-title {
     font-weight: bold;
-    /* font-size: 14px; */
 }
 .contact-block-content a{
     text-decoration: none;
     color: black;
+}
+
+@keyframes move {
+     from {
+         width: 0;
+         height: 0;
+         transform: translateZ(50px) rotateZ(90deg) rotateY(90deg);
+     }
+     5% {
+         width: 10%;
+         height: 10%;
+     }
+     50% {
+         width: 30%;
+         height: 80%;
+     }
+     to {
+         width: 60%;
+         height: auto;
+         transform: translateZ(0px) rotateZ(360deg) rotateY(360deg);
+
+     }
+ }
+@keyframes left-move {
+    from {
+        transform: translateX(150px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+@keyframes right-move {
+     from {
+         transform: translateX(-150px);
+     }
+     to {
+         transform: translateX(0px);
+     }
+ }
+@keyframes rotate-img {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
